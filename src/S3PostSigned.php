@@ -2,25 +2,20 @@
 
 namespace Tonitin\PostS3;
 
-use Exception;
 
 
 trait S3PostSigned
 {
+
+    /**
+     * Create a signed URL to upload files to the S3 service.
+     * @param mixed $disk 
+     * @param mixed $path 
+     * @param mixed $sizeBytes 
+     * @return array 
+     */
     public function createPostSigned($disk, $path = null, $sizeBytes = null)
     {
-
-
-        // if ($path == null && !function_exists('getStoragePath')) {
-        //     throw new Exception("Implements getPath");
-        // }
-
-
-
-        // if (!function_exists('getSizeFile')) {
-        //     abort(500, 'Implements getSizeFile');
-        // }
-
 
         $path = $path ?? $this->getStoragePath();
         // $sizeBytes = $sizeBytes ?? $this->getSizeFile();
