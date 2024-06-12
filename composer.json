@@ -1,0 +1,21 @@
+{
+    "name": "tonitin/post-s3",
+    "description": "Upload direct to s3",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Tonitin\\PostS3\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "tonitomystery",
+            "email": "amaristany01@gmail.com"
+        }
+    ],
+    "require": {
+        "aws/aws-sdk-php": "^3.314",
+        "vlucas/phpdotenv": "^5.6"
+    }
+}
