@@ -21,3 +21,26 @@ $sizeBytes = 80000;
 $bucketName = 'example';
 $key = 'xyz/abc/horse.mp3';
 $postSigned = $post->createPostSigned($bucketName, $key, $sizeBytes);
+```
+
+
+
+
+## Example response
+
+```json
+{
+  "formAttributes": {
+    "action": "endpointUrl",
+    "method": "POST",
+    "enctype": "multipart/form-data"
+  },
+  "formInputs": {
+    "key": "xyz/abc/horse.mp3",
+    "X-Amz-Credential": "xxxxxxxxx",
+    "X-Amz-Algorithm": "xxxxxxxxx",
+    "X-Amz-Date": "xxxxxxxxxxxxxxxxxxxxxxxx",
+    "Policy": "xxxxxxxxxxxxxxxxxxxxxxxx",
+    "X-Amz-Signature": "xxxxxxxxxxxxxxxxxxxxxxxx"
+  }
+}
